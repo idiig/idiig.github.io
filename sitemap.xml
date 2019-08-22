@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://idiig.github.io/post/</loc>
-    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/</loc>
-    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/post/test/</loc>
-    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
+    <loc>https://idiig.github.io/post/japanese_class2/</loc>
+    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
+    <loc>https://idiig.github.io/post/</loc>
+    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://idiig.github.io/tags/</loc>
-    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
+    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://idiig.github.io/tags/%E6%8E%88%E6%A5%AD/</loc>
-    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
+    <loc>https://idiig.github.io/</loc>
+    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://idiig.github.io/post/%E6%8E%88%E6%A5%AD%EF%BC%92/</loc>
-    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
+    <loc>https://idiig.github.io/tags/japanese-class/</loc>
+    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/post/japanese_class1/</loc>
+    <lastmod>2019-07-30T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
