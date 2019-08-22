@@ -40,46 +40,14 @@
   </url>
   
   <url>
-    <loc>https://idiig.github.io/categories/</loc>
-    <lastmod>2017-08-30T01:53:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/post/japanese-preview/</loc>
-    <lastmod>2017-08-30T01:53:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/tags/preview/</loc>
-    <lastmod>2017-08-30T01:53:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/tags/tag-4/</loc>
-    <lastmod>2017-08-30T01:53:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
-    <lastmod>2017-08-30T01:53:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
-    <lastmod>2017-08-30T01:53:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://idiig.github.io/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/categories/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
