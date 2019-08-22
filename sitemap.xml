@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="https://idiig.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://idiig.github.io/</loc>
+    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/post/</loc>
+    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/post/test/</loc>
+    <lastmod>2019-08-22T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
