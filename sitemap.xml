@@ -1,46 +1,46 @@
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://idiig.github.io/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://idiig.github.io/post/</loc>
     <lastmod>2019-08-22T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://idiig.github.io/</loc>
     <lastmod>2019-08-22T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/test/</loc>
+    <loc>https://idiig.github.io/post/test/</loc>
     <lastmod>2019-08-22T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://idiig.github.io/tags/</loc>
     <lastmod>2019-08-22T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E6%8E%88%E6%A5%AD/</loc>
+    <loc>https://idiig.github.io/tags/%E6%8E%88%E6%A5%AD/</loc>
     <lastmod>2019-08-22T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E6%8E%88%E6%A5%AD%EF%BC%92/</loc>
+    <loc>https://idiig.github.io/post/%E6%8E%88%E6%A5%AD%EF%BC%92/</loc>
     <lastmod>2019-08-22T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://idiig.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
