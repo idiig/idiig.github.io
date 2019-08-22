@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>授業 on Even - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/tags/%E6%8E%88%E6%A5%AD/</link>
+    <description>Recent content in 授業 on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%E6%8E%88%E6%A5%AD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>授業２</title>
+      <link>http://localhost:1313/post/%E6%8E%88%E6%A5%AD%EF%BC%92/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%8E%88%E6%A5%AD%EF%BC%92/</guid>
+      <description>单词 切手 九月 九ヶ月 くだもの 立派 みじかい ほそい ふとい 体育館 いかが 伝える こうつうじこ じゅうたい 文法 ってはいけない お&amp;ndash;ください に わけに</description>
+    </item>
+    
+  </channel>
+</rss>
