@@ -2,45 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://idiig.github.io/post/japanese_class2/</loc>
-    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://idiig.github.io/post/</loc>
-    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
+    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/tags/</loc>
-    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
+    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/</loc>
-    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
+    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://idiig.github.io/tags/note/</loc>
+    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/post/%E5%85%B3%E4%BA%8E%E4%BB%8E%E8%AE%AD%E8%AF%BB%E6%96%87%E8%8E%B7%E5%8F%96%E5%8E%9F%E6%96%87%E6%A0%BC-%E8%AF%8D%E6%80%A7%E4%BF%A1%E6%81%AF%E7%9A%84%E5%B0%9D%E8%AF%95/</loc>
+    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/post/japanese_class2/</loc>
+    <lastmod>2019-08-29T19:42:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://idiig.github.io/tags/japanese-class/</loc>
-    <lastmod>2019-08-19T00:00:00+08:00</lastmod>
+    <lastmod>2019-08-29T19:42:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/post/japanese_class1/</loc>
-    <lastmod>2019-07-30T00:00:00+08:00</lastmod>
+    <lastmod>2019-08-29T19:42:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/about/</loc>
+    <lastmod>2019-08-29T19:42:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

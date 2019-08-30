@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>关于从训读文获取原文格/词性信息的尝试 - idiig - notes for Japaneses linguistics</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="idiig" /><meta name="description" content="在大框架下面先要完成的一些小工作。
+问题点（背景）  古汉语表现的分词实现有一定的困难。 词的词性受语境影响说法不一。 中文格由语顺决定，日语通过格助词确认。 最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。 " /><meta name="keywords" content="Japanese, linguistics" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://idiig.github.io/post/%E5%85%B3%E4%BA%8E%E4%BB%8E%E8%AE%AD%E8%AF%BB%E6%96%87%E8%8E%B7%E5%8F%96%E5%8E%9F%E6%96%87%E6%A0%BC-%E8%AF%8D%E6%80%A7%E4%BF%A1%E6%81%AF%E7%9A%84%E5%B0%9D%E8%AF%95/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="关于从训读文获取原文格/词性信息的尝试" />
+<meta property="og:description" content="在大框架下面先要完成的一些小工作。
+
+问题点（背景）
+
+
+古汉语表现的分词实现有一定的困难。
+词的词性受语境影响说法不一。
+中文格由语顺决定，日语通过格助词确认。
+最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://idiig.github.io/post/%E5%85%B3%E4%BA%8E%E4%BB%8E%E8%AE%AD%E8%AF%BB%E6%96%87%E8%8E%B7%E5%8F%96%E5%8E%9F%E6%96%87%E6%A0%BC-%E8%AF%8D%E6%80%A7%E4%BF%A1%E6%81%AF%E7%9A%84%E5%B0%9D%E8%AF%95/" />
+<meta property="article:published_time" content="2019-08-30T00:00:00&#43;08:00"/>
+<meta property="article:modified_time" content="2019-08-30T00:00:00&#43;08:00"/>
+
+<meta itemprop="name" content="关于从训读文获取原文格/词性信息的尝试">
+<meta itemprop="description" content="在大框架下面先要完成的一些小工作。
+
+问题点（背景）
+
+
+古汉语表现的分词实现有一定的困难。
+词的词性受语境影响说法不一。
+中文格由语顺决定，日语通过格助词确认。
+最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。
+">
+
+
+<meta itemprop="datePublished" content="2019-08-30T00:00:00&#43;08:00" />
+<meta itemprop="dateModified" content="2019-08-30T00:00:00&#43;08:00" />
+<meta itemprop="wordCount" content="2262">
+
+
+
+<meta itemprop="keywords" content="note," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="关于从训读文获取原文格/词性信息的尝试"/>
+<meta name="twitter:description" content="在大框架下面先要完成的一些小工作。
+
+问题点（背景）
+
+
+古汉语表现的分词实现有一定的困难。
+词的词性受语境影响说法不一。
+中文格由语顺决定，日语通过格助词确认。
+最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">idiig</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">idiig</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">关于从训读文获取原文格/词性信息的尝试</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-30 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#问题点-背景">问题点（背景）</a></li>
+<li><a href="#拟解决的问题">拟解决的问题</a></li>
+<li><a href="#关联研究">关联研究</a></li>
+<li><a href="#方法">方法</a>
+<ul>
+<li><a href="#材料-五言绝句-理由">材料-<a href="https://zh.wikipedia.org/wiki/五言絕句">五言绝句</a>。理由：</a></li>
+<li><a href="#原文-训读括号表示文-書き下し文语料库的建立">原文-训读括号表示文-書き下し文语料库的建立。</a></li>
+<li><a href="#根据训读括号表示对原文进行分割">根据训读括号表示对原文进行分割。</a></li>
+<li><a href="#关于格的问题">关于格的问题</a></li>
+</ul></li>
+<li><a href="#我需要做的事">我需要做的事</a></li>
+<li><a href="#在整体的framework中">在整体的framework中</a></li>
+<li><a href="#参考文献">参考文献</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>在大框架下面先要完成的一些小工作。</p>
+
+<h2 id="问题点-背景">问题点（背景）</h2>
+
+<ul>
+<li>古汉语表现的分词实现有一定的困难。</li>
+<li>词的词性受语境影响说法不一。</li>
+<li>中文格由语顺决定，日语通过格助词确认。</li>
+<li>最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。</li>
+</ul>
+
+<h2 id="拟解决的问题">拟解决的问题</h2>
+
+<ul>
+<li>利用训读对古汉语文段进行单位的分割（分词）。</li>
+<li>从训读添加的格助词等信息进行原文中各个词的成分分析（格的确认）。</li>
+<li>从训读添加的格助词等信息进行确认原文中各个词的词性。</li>
+</ul>
+
+<p>虽然提供的分词、格、词性信息也仅仅是训读者的一家之言，但根本目的是：通过匹配原文-書き下し文的词性与格信息，在计算互信息的方法下实现更高的对译词抽出的正确率。尽管根据训读文的不同，格信息只在该句中有参考价值，可以与研究的
+framework分开去考虑，但是词性的判别应该可以成为一个值得期待的稳定因素。</p>
+
+<h2 id="关联研究">关联研究</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Charles%5FJ.%5FFillmore">Fillmore</a>（1968）<sup class="footnote-ref" id="fnref:fn-1"><a href="#fn:fn-1">1</a></sup><a href="https://en.wikipedia.org/wiki/Case%5Fgrammar">格语法（case grammar）</a>。</li>
+<li>山元（2009）<sup class="footnote-ref" id="fnref:fn-2"><a href="#fn:fn-2">2</a></sup>对<a href="https://kotobank.jp/word/八代集-114801">《八代集》</a>进行了分词及词的thesaurus化。问题点：在这里似乎没有同日本一样的可参照的<a href="https://pj.ninjal.ac.jp/corpus%5Fcenter/goihyo.html">《分类词汇表索引》</a>。</li>
+<li>安岡他（2018，p.325）<sup class="footnote-ref" id="fnref:fn-3"><a href="#fn:fn-3">3</a></sup>在开发古典中国語形態素解析系统时提到：</li>
+</ul>
+
+<blockquote>
+<p>Mecabの辞書には「品詞」（複数の階層が可能）が必要なことから,我々は，日本語と漢文をつなぐ「構造」の一種である訓読に着目し，返り点を「品詞」に反映させることを考えた。すなわち，訓読における返り点を，漢文の動賓構造を表しているとみなし，…</p>
+</blockquote>
+
+<ul>
+<li>岛野（2006）<sup class="footnote-ref" id="fnref:fn-4"><a href="#fn:fn-4">4</a></sup>对汉文训读进行了＜＞表示（カッコつき表示；括号表示），便于计算机的处理。カッコ記号とハイフンで</li>
+</ul>
+
+<blockquote>
+<p>あらゆる返り点つき漢文の、すべての訓読操作をカバーしている…</p>
+</blockquote>
+
+<h2 id="方法">方法</h2>
+
+<h3 id="材料-五言绝句-理由">材料-<a href="https://zh.wikipedia.org/wiki/五言絕句">五言绝句</a>。理由：</h3>
+
+<ul>
+<li>短小精悍</li>
+<li>语顺替换单纯</li>
+<li>每个时代都大量存在</li>
+</ul>
+
+<h3 id="原文-训读括号表示文-書き下し文语料库的建立">原文-训读括号表示文-書き下し文语料库的建立。</h3>
+
+<div class="table-caption">
+  <span class="table-number">Table 1</span>:
+  一个栗子（虽然是七言绝句）
+</div>
+
+<table>
+<thead>
+<tr>
+<th>类 型</th>
+<th>文</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>原 文</td>
+<td>空令歳月易蹉跎</td>
+</tr>
+
+<tr>
+<td>カッコつき表示</td>
+<td>空しく＜令・しめん＜＜歳月をして＞易から＜蹉跎たり＞＞＞</td>
+</tr>
+
+<tr>
+<td>書き下し文</td>
+<td>むなしく歳月をして蹉跎たりやすからしめん</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="根据训读括号表示对原文进行分割">根据训读括号表示对原文进行分割。</h3>
+
+<p>以汉语分词工具<a href="https://github.com/fxsjy/jieba">jieba</a>为例的分割：</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">jieba.posseg</span> <span class="kn">as</span> <span class="nn">pseg</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">pseg</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="s1">&#39;空令岁月易蹉跎&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">flag</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">flag</span><span class="p">))</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>运行结果（其中‘空令’被分作名词，‘岁月’为时间词，‘易’为形容词，‘蹉跎’为动词，似乎不太准确）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">空令 n
+岁月 t
+易 a
+蹉跎 v</code></pre></td></tr></table>
+</div>
+</div>
+<p>以日语形態素解析器<a href="https://taku910.github.io/mecab/">MeCab</a>对書き下し文进行分割为例：</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">mecab
+むなしく歳月をして蹉跎たりやすからしめん</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>结果（因为使用的是现代语用的<a href="https://unidic.ninjal.ac.jp/">uni-dic</a>，所以错误分解较多非常不准确）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">むなしく	形容詞,自立,*,*,形容詞・イ段,連用テ接続,むなしい,ムナシク,ムナシク
+歳月	名詞,一般,*,*,*,*,歳月,サイゲツ,サイゲツ
+を	助詞,格助詞,一般,*,*,*,を,ヲ,ヲ
+し	動詞,自立,*,*,サ変・スル,連用形,する,シ,シ
+て	助詞,接続助詞,*,*,*,*,て,テ,テ
+蹉跎	名詞,一般,*,*,*,*,*
+たり	助動詞,*,*,*,文語・ナリ,基本形,たり,タリ,タリ
+やす	助動詞,*,*,*,特殊・マス,基本形,やす,ヤス,ヤス
+から	助詞,接続助詞,*,*,*,*,から,カラ,カラ
+しめ	動詞,自立,*,*,一段,未然形,しめる,シメ,シメ
+ん	助動詞,*,*,*,不変化型,基本形,ん,ン,ン
+EOS</code></pre></td></tr></table>
+</div>
+</div>
+<p>但如果拆开来单独解析「やすからしめん」，则得到正确解析结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">やすから	形容詞,非自立,*,*,形容詞・アウオ段,未然ヌ接続,やすい,ヤスカラ,ヤスカラ
+しめん	動詞,接尾,*,*,一段,体言接続特殊,しめる,シメン,シメン
+EOS</code></pre></td></tr></table>
+</div>
+</div>
+<p>因此，我们期望通过括号表示的形式进行匹配，比如说：</p>
+
+<div class="table-caption">
+  <span class="table-number">Table 2</span>:
+  期望的结果
+</div>
+
+<table>
+<thead>
+<tr>
+<th>中国語</th>
+<th>日本語（表層型）</th>
+<th>日本語（辞書型）</th>
+<th>品詞（POS）</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>空</td>
+<td>むなしく</td>
+<td>むなし　</td>
+<td>形容詞</td>
+</tr>
+
+<tr>
+<td>令</td>
+<td>しめん</td>
+<td>しむ</td>
+<td>助動詞</td>
+</tr>
+
+<tr>
+<td>歳月</td>
+<td>歳月をして</td>
+<td>歳月をす</td>
+<td>動詞</td>
+</tr>
+
+<tr>
+<td>易</td>
+<td>やすから</td>
+<td>やすし</td>
+<td>形容詞</td>
+</tr>
+
+<tr>
+<td>蹉跎</td>
+<td>蹉跎たり</td>
+<td>蹉跎たり</td>
+<td>形容動詞・名詞</td>
+</tr>
+</tbody>
+</table>
+
+<p>但是在品词的地方很多时候都会有一定的问题，比如说“空”不应该对应的是形容词，我们希望在MeCab给出「連用テ接続」的时候斟酌其词性应为副词还是形容词。除此以外，「歳月をして」的时候可以预见MeCab会将其分为「歳月」「を」「する」三组，而「歳月」则为名词，在这点上也需要考虑是否要将「をして」作为翻译中多余的string。仅仅是一个例子就存在很多有争议的地方，这需要重新去考量，抑或者整理一套规则。</p>
+
+<h3 id="关于格的问题">关于格的问题</h3>
+
+<p>通过汉文训读抽出词的格信息需要一定的归纳，比如说：</p>
+
+<div class="table-caption">
+  <span class="table-number">Table 3</span>:
+  训读附加信息与格信息的对应关系（例）
+</div>
+
+<table>
+<thead>
+<tr>
+<th>训读附加信息</th>
+<th>格</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>が</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>を</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>に</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>より</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>なり</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>たり</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>と</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>ば</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+
+<p>而问题是如何将这些格对应到中日双方共有的“深层格”上，还是说继续保持表层格的对应？</p>
+
+<h2 id="我需要做的事">我需要做的事</h2>
+
+<ul>
+<li>收集五言律诗，整理训读，形成库（训读资料在中国比较难收集）。</li>
+<li>尝试中古uni-dic是否可行。</li>
+<li>归纳训读的附加string，思考这些附加文字串所携带的格信息。</li>
+<li>对于训读的括号表示需要再参考文献继续学习表现方式。</li>
+<li>思考是否添加“/”等区切り記号，比方说在有「レ点」等标注处直接使用“/”，是否就不需要所谓的括号表示了。</li>
+</ul>
+
+<h2 id="在整体的framework中">在整体的framework中</h2>
+
+<p>也就是说训读的附加string都在本质上改变了原文的性质或者说多少改变了其信息含量。我们先假设其改变的信息中含有格的信息以及词性的信息，假设这些信息是对应的，利用这些信息增加对译词库建设的准确性，再反过来去确认其信息改变的多寡。当然，在整体框架之下，做一些二字词的训读处理相关的研究也应该非常有意思。</p>
+
+<h2 id="参考文献">参考文献</h2>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:fn-1"><a href="http://linguistics.berkeley.edu/~syntax-circle/syntax-group/spr08/fillmore.pdf">http://linguistics.berkeley.edu/~syntax-circle/syntax-group/spr08/fillmore.pdf</a>
+ <a class="footnote-return" href="#fnref:fn-1"><sup>[return]</sup></a></li>
+<li id="fn:fn-2"><a href="https://www.jstage.jst.go.jp/article/nihongonokenkyu/5/1/5%5FKJ00005622765/%5Fpdf/-char/ja">https://www.jstage.jst.go.jp/article/nihongonokenkyu/5/1/5%5FKJ00005622765/%5Fpdf/-char/ja</a>
+ <a class="footnote-return" href="#fnref:fn-2"><sup>[return]</sup></a></li>
+<li id="fn:fn-3"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/229121/1/IPSJ-JNL5902009.pdf">https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/229121/1/IPSJ-JNL5902009.pdf</a>
+ <a class="footnote-return" href="#fnref:fn-3"><sup>[return]</sup></a></li>
+<li id="fn:fn-4"><a href="http://www.wasanjyorin.com/061226kundokualgorism.pdf">http://www.wasanjyorin.com/061226kundokualgorism.pdf</a>
+ <a class="footnote-return" href="#fnref:fn-4"><sup>[return]</sup></a></li>
+</ol>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">idiig</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-08-30
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/note/">note</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/japanese_class2/">
+            <span class="next-text nav-default">Japanese class 2</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:avionplat@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://github.com/idiig" class="iconfont icon-github" title="github"></a>
+  <a href="https://idiig.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">idiig</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -6,10 +6,28 @@
     <description>Recent content on idiig - notes for Japaneses linguistics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://idiig.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于从训读文获取原文格/词性信息的尝试</title>
+      <link>https://idiig.github.io/post/%E5%85%B3%E4%BA%8E%E4%BB%8E%E8%AE%AD%E8%AF%BB%E6%96%87%E8%8E%B7%E5%8F%96%E5%8E%9F%E6%96%87%E6%A0%BC-%E8%AF%8D%E6%80%A7%E4%BF%A1%E6%81%AF%E7%9A%84%E5%B0%9D%E8%AF%95/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://idiig.github.io/post/%E5%85%B3%E4%BA%8E%E4%BB%8E%E8%AE%AD%E8%AF%BB%E6%96%87%E8%8E%B7%E5%8F%96%E5%8E%9F%E6%96%87%E6%A0%BC-%E8%AF%8D%E6%80%A7%E4%BF%A1%E6%81%AF%E7%9A%84%E5%B0%9D%E8%AF%95/</guid>
+      <description>&lt;p&gt;在大框架下面先要完成的一些小工作。&lt;/p&gt;
+
+&lt;h2 id=&#34;问题点-背景&#34;&gt;问题点（背景）&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;古汉语表现的分词实现有一定的困难。&lt;/li&gt;
+&lt;li&gt;词的词性受语境影响说法不一。&lt;/li&gt;
+&lt;li&gt;中文格由语顺决定，日语通过格助词确认。&lt;/li&gt;
+&lt;li&gt;最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Japanese class 2</title>

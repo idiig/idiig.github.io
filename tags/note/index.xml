@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on idiig - notes for Japaneses linguistics</title>
-    <link>https://idiig.github.io/post/</link>
-    <description>Recent content in Posts on idiig - notes for Japaneses linguistics</description>
+    <title>note on idiig - notes for Japaneses linguistics</title>
+    <link>https://idiig.github.io/tags/note/</link>
+    <description>Recent content in note on idiig - notes for Japaneses linguistics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 30 Aug 2019 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://idiig.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,24 +27,6 @@
 &lt;li&gt;中文格由语顺决定，日语通过格助词确认。&lt;/li&gt;
 &lt;li&gt;最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Japanese class 2</title>
-      <link>https://idiig.github.io/post/japanese_class2/</link>
-      <pubDate>Mon, 19 Aug 2019 00:00:00 +0800</pubDate>
-      
-      <guid>https://idiig.github.io/post/japanese_class2/</guid>
-      <description>&lt;p&gt;第二次日语课&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Japanese Class 1</title>
-      <link>https://idiig.github.io/post/japanese_class1/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0800</pubDate>
-      
-      <guid>https://idiig.github.io/post/japanese_class1/</guid>
-      <description>&lt;p&gt;第一次日语课&lt;/p&gt;</description>
     </item>
     
   </channel>
