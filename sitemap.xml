@@ -3,20 +3,39 @@
   
   <url>
     <loc>https://idiig.github.io/post/</loc>
-    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/tags/</loc>
-    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/tags/class/</loc>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/</loc>
-    <lastmod>2019-08-30T00:00:00+08:00</lastmod>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/tags/japanese/</loc>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/post/japanese-class-3/</loc>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -34,20 +53,20 @@
   
   <url>
     <loc>https://idiig.github.io/post/japanese_class2/</loc>
-    <lastmod>2019-08-29T19:42:48+08:00</lastmod>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/tags/japanese-class/</loc>
-    <lastmod>2019-08-29T19:42:48+08:00</lastmod>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/post/japanese_class1/</loc>
-    <lastmod>2019-08-29T19:42:48+08:00</lastmod>
+    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
