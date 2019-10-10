@@ -6,89 +6,18 @@
     <description>Recent content in Posts on idiig - notes for Japaneses linguistics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Oct 2019 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://idiig.github.io/post/all-posts/</link>
-      <pubDate>Sun, 06 Oct 2019 00:00:00 +0900</pubDate>
+      <title>japanese class 4</title>
+      <link>https://idiig.github.io/post/japanese-class-4/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://idiig.github.io/post/all-posts/</guid>
-      <description>&lt;h2 id=&#34;blog-ideas&#34;&gt;Blog Ideas&lt;/h2&gt;
-
-&lt;h3 id=&#34;explaination&#34;&gt;&lt;span class=&#34;org-todo done DONE&#34;&gt;DONE&lt;/span&gt; explaination&lt;/h3&gt;
-
-&lt;h4 id=&#34;intro-簡潔に研究内容を紹介&#34;&gt;Intro（簡潔に研究内容を紹介）&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;文を単位とした中国古典詩とその書き下し文のパラレルコーパスを構築する。出来るだけ多くのテクストを格納する。&lt;/li&gt;
-&lt;li&gt;統計的なアプローチで原文と書き下し文における相互対応の文字列もしくはユニットを抽出し、ユニット同士の類似度・対応率を計算する。&lt;/li&gt;
-&lt;li&gt;計画書に書いた内容とは少し変わったが、基本的にレヴェンシュタイン距離とLCSRの計算方法に基づいて計算する。ユニット同士の対応率をウェイトに原文と書き下し文の距離計算の方法はまた考える。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;訓読を材料とする理由&#34;&gt;訓読を材料とする理由&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;千の細胞のうち約三分の一が神経細胞といわれる線虫が神経科学研究のモデル生物であるように、漢文訓読は古来より日本人が異言語を解読し受け入れる心理・仕組みを解明するよい研究モデルだと思われる。また、漢文訓読による書き下しが極めて形式的かつ単純な翻訳・読解法である為、翻訳研究・言語変異研究の「線虫」と考えてよいであろう。&lt;/li&gt;
-&lt;li&gt;漢文訓読で一部の人が漢文を理解したと思い込むかもしれないが、実は訓読により、普通の翻訳と同じく、借用・意訳・逐語訳などがあるので、決して意味が変わっていない訳ではない。&lt;/li&gt;
-&lt;li&gt;対応ユニットの抽出、対応ユニット辞書の構築は、中国の古典詩研究に日本人の見方を与えることができる。中国語は語順で品詞を決める孤立語で、品詞についてしばしば各種の意見がある。そして、各語に関し、その意味にも諸説がある。古来より中国との言語接触の多い日本の資料が直接的な参考になるかもしれない。&lt;/li&gt;
-&lt;li&gt;個人的な理由で、漢文訓読が非常に面白いシステムだと思っている。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;材料はどこからとる&#34;&gt;材料はどこからとる&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;台湾大学がやっているデジタルヒューマニティーのための中国哲学書のデータベース&lt;/li&gt;
-&lt;li&gt;訓読資料は岩波書店などの漢文体系からとる。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;今日はこの辺で&#34;&gt;今日はこの辺で&lt;/h4&gt;
-
-&lt;h3 id=&#34;授業２&#34;&gt;&lt;span class=&#34;org-todo done DONE&#34;&gt;DONE&lt;/span&gt; 授業２&lt;/h3&gt;
-
-&lt;h4 id=&#34;单词&#34;&gt;单词&lt;/h4&gt;
-
-&lt;p&gt;切手　九月　九ヶ月　くだもの　立派　みじかい　ほそい　ふとい　体育館　いかが　伝える　こうつうじこ　じゅうたい&lt;/p&gt;
-
-&lt;h4 id=&#34;文法&#34;&gt;文法&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ってはいけない&lt;/li&gt;
-&lt;li&gt;お&amp;ndash;ください&lt;/li&gt;
-&lt;li&gt;に&lt;/li&gt;
-&lt;li&gt;わけにはいかない&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;造句&#34;&gt;造句&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日本没有中国大&lt;/li&gt;
-&lt;li&gt;小时候&lt;/li&gt;
-&lt;li&gt;比起那个人我更喜欢他&lt;/li&gt;
-&lt;li&gt;吃了药之后睡觉&lt;/li&gt;
-&lt;li&gt;全世界&lt;/li&gt;
-&lt;li&gt;杭州（こうしゅう）以西湖（せいこ）著名&lt;/li&gt;
-&lt;li&gt;又刮风又下雨&lt;/li&gt;
-&lt;li&gt;我日语没那么好&lt;/li&gt;
-&lt;li&gt;我很在意那句话&lt;/li&gt;
-&lt;li&gt;把合格当目标&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;关于从训读文获取原文格-词性信息的尝试&#34;&gt;&lt;span class=&#34;org-todo done DONE&#34;&gt;DONE&lt;/span&gt; 关于从训读文获取原文格/词性信息的尝试&lt;/h3&gt;
-
-&lt;p&gt;在大框架下面先要完成的一些小工作。&lt;/p&gt;
-
-&lt;h4 id=&#34;问题点-背景&#34;&gt;问题点（背景）&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;古汉语表现的分词实现有一定的困难。&lt;/li&gt;
-&lt;li&gt;词的词性受语境影响说法不一。&lt;/li&gt;
-&lt;li&gt;中文格由语顺决定，日语通过格助词确认。&lt;/li&gt;
-&lt;li&gt;最重要的一点是：在对译词抽出的过程中仅仅依靠互信息计算的方法可能导致正确率低下。&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>https://idiig.github.io/post/japanese-class-4/</guid>
+      <description>作文 Table 1: 作文纠错 No. 原文 订正文 问题 01 私は、若い頃は、秋は夏ほど美しくないと思った。 私は、若い頃は、秋は夏ほど美しくないと思っていた。 02 秋より夏</description>
     </item>
     
     <item>

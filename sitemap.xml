@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://idiig.github.io/post/all-posts/</loc>
-    <lastmod>2019-10-06T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://idiig.github.io/post/</loc>
-    <lastmod>2019-10-06T00:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://idiig.github.io/</loc>
-    <lastmod>2019-10-06T00:00:00+09:00</lastmod>
+    <lastmod>2019-10-10T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/tags/</loc>
-    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
+    <lastmod>2019-10-10T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://idiig.github.io/tags/class/</loc>
-    <lastmod>2019-09-02T22:39:53+08:00</lastmod>
+    <lastmod>2019-10-10T00:00:00+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/</loc>
+    <lastmod>2019-10-10T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idiig.github.io/post/japanese-class-4/</loc>
+    <lastmod>2019-10-10T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
