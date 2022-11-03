@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://idiig.github.io/</loc>
+    <loc>https://idiig.github.io.git/</loc>
     <lastmod>2022-11-02T12:13:07+09:00</lastmod>
   </url><url>
-    <loc>https://idiig.github.io/tags/blog/</loc>
+    <loc>https://idiig.github.io.git/tags/blog/</loc>
     <lastmod>2022-11-02T12:13:07+09:00</lastmod>
   </url><url>
-    <loc>https://idiig.github.io/post/</loc>
+    <loc>https://idiig.github.io.git/post/</loc>
     <lastmod>2022-11-02T12:13:07+09:00</lastmod>
   </url><url>
-    <loc>https://idiig.github.io/tags/</loc>
+    <loc>https://idiig.github.io.git/tags/</loc>
     <lastmod>2022-11-02T12:13:07+09:00</lastmod>
   </url><url>
-    <loc>https://idiig.github.io/post/2022/11/02/test/</loc>
+    <loc>https://idiig.github.io.git/post/2022/11/02/test/</loc>
     <lastmod>2022-11-02T12:13:07+09:00</lastmod>
   </url><url>
-    <loc>https://idiig.github.io/about/</loc>
+    <loc>https://idiig.github.io.git/about/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://idiig.github.io/categories/</loc>
+    <loc>https://idiig.github.io.git/categories/</loc>
   </url>
 </urlset>
