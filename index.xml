@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://github.com/idiig/idiig.github.io.git/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Nov 2022 11:41:00 +0900</lastBuildDate><atom:link href="https://github.com/idiig/idiig.github.io.git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://github.com/idiig/idiig.github.io.git/post/2022/11/02/test/</link>
+      <pubDate>Wed, 02 Nov 2022 11:41:00 +0900</pubDate>
+      
+      <guid>https://github.com/idiig/idiig.github.io.git/post/2022/11/02/test/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-11-02 Wed 11:41] 感觉很多时候再重复查询一些解决办法，所以时隔三年重新开始用Hugo记录一些碰壁的情况用于以后查看</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://github.com/idiig/idiig.github.io.git/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/idiig/idiig.github.io.git/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
