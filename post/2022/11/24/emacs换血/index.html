@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>emacs换血 | </title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">emacs换血</span></h1>
+<h2 class="author">idiig</h2>
+<h2 class="date">2022/11/24</h2>
+</div>
+
+<main>
+<ul>
+<li>State &ldquo;DONE&rdquo;       from &ldquo;TODO&rdquo;       <span class="timestamp-wrapper"><span class="timestamp">[2022-11-24 Thu 02:30]</span></span></li>
+</ul>
+<p>上个月删除了很多完全不用的emacs插件，改成了一些更加简约和便捷的工具。</p>
+<h2 id="ivy-councel-helm-换成-consult-embark-vertigo-marginalia">ivy councel helm 换成 consult embark vertigo marginalia</h2>
+<p>grep能够更顺畅，平时完全ivy里不需要的功能也顺带除外了。</p>
+<p>helm-ag的项目检索用consult的ripgrep代替。通过embark，occur编辑功能和
+wgrep功能得到统一。</p>
+<p>预览页面因为预览org页码比较笨重选择了关闭，可以通过 <code>C-v</code> 查看。</p>
+<h2 id="lsp-mode-换成-lsp-bridge-mode">lsp-mode 换成 lsp-bridge-mode</h2>
+<p>其中针对python下载了pyright也不能激活的问题，通过更改python路径
+<code>/Users/idiig/.pyenv/shims/python</code> 解决</p>
+<h2 id="grammartical-edit">grammartical edit</h2>
+<p>代替smart parenthesis解决括号引号配对问题</p>
+<h2 id="which-key-换用-embark">which-key 换用 embark</h2>
+<p>major-mode里在 <code>,</code> 后用 <code>C-h</code> 可查看快捷键不在需要which-key</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © avionplat 2019 &ndash; 2022 | <a href="https://github.com/idiig">Github</a> | <a href="https://twitter.com/murahutibu">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

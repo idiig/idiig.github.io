@@ -6,7 +6,22 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Nov 2022 01:49:00 +0900</lastBuildDate><atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Nov 2022 02:30:00 +0900</lastBuildDate><atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>emacs换血</title>
+      <link>https://idiig.github.io/post/2022/11/24/emacs%E6%8D%A2%E8%A1%80/</link>
+      <pubDate>Thu, 24 Nov 2022 02:30:00 +0900</pubDate>
+      
+      <guid>https://idiig.github.io/post/2022/11/24/emacs%E6%8D%A2%E8%A1%80/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-11-24 Thu 02:30] 上个月删除了很多完全不用的emacs插件，改成了一些更加简约和便捷的工具。
+ivy councel helm 换成 consult embark vertigo marginalia grep能够更顺畅，平时完全ivy里不需要的功能也顺带除外了。
+helm-ag的项目检索用consult的ripgrep代替。通过embark，occur编辑功能和 wgrep功能得到统一。
+预览页面因为预览org页码比较笨重选择了关闭，可以通过 C-v 查看。
+lsp-mode 换成 lsp-bridge-mode 其中针对python下载了pyright也不能激活的问题，通过更改python路径 /Users/idiig/.pyenv/shims/python 解决
+grammartical edit 代替smart parenthesis解决括号引号配对问题
+which-key 换用 embark major-mode里在 , 后用 C-h 可查看快捷键不在需要which-key</description>
+    </item>
+    
     <item>
       <title>Org-cite basics</title>
       <link>https://idiig.github.io/post/2022/11/24/org-cite-basics/</link>
