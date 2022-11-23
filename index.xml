@@ -22,6 +22,17 @@ cite/a/cf:: Citeauthor &amp;ndash; Aa, Bb, and Cc cite/a/c:: Citeauthor &amp;nda
     </item>
     
     <item>
+      <title>M1 Emacs不能被brew安装的问题</title>
+      <link>https://idiig.github.io/post/2022/11/24/m1-emacs%E4%B8%8D%E8%83%BD%E8%A2%ABbrew%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 24 Nov 2022 01:48:00 +0900</pubDate>
+      
+      <guid>https://idiig.github.io/post/2022/11/24/m1-emacs%E4%B8%8D%E8%83%BD%E8%A2%ABbrew%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-11-24 Thu 01:48] 因为换电脑时直接继承了原来的配置，brew为intel版本所以brew安装一直没能成功安装M1版本的Emacs。
+安装M1版本的brew，alias为mbrew，通过mbrew成功安装M1版本的Emacs。
+[2022-11-24 Thu 01:41]</description>
+    </item>
+    
+    <item>
       <title>Test</title>
       <link>https://idiig.github.io/post/2022/11/02/test/</link>
       <pubDate>Wed, 02 Nov 2022 11:41:00 +0900</pubDate>
