@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://idiig.github.io/</link>
-    <description>Recent content on </description>
+    <title>emacs on </title>
+    <link>https://idiig.github.io/tags/emacs/</link>
+    <description>Recent content in emacs on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Nov 2022 01:49:00 +0900</lastBuildDate><atom:link href="https://idiig.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Nov 2022 01:49:00 +0900</lastBuildDate><atom:link href="https://idiig.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org-cite basics</title>
       <link>https://idiig.github.io/post/2022/11/24/org-cite-basics/</link>
@@ -19,24 +19,6 @@
 #+print_bibliography: 复杂引用：下面的例子会生成 see org et al. 2021, 7 for fun .
 [cite/l/b:see @OrgCitations pp. 7 for fun] l: 引用格式 b: 引用变体 see: 共通头部补充 pp. 7: 页码等定位信息 for fun: 共通尾部补充 常用的biblatex转换：
 cite/a/cf:: Citeauthor &amp;ndash; Aa, Bb, and Cc cite/a/c:: Citeauthor &amp;ndash; Aa et al. cite/na:: citeyear &amp;ndash; 2022 cite/na/b:: citeyearpar &amp;ndash; (2022) cite/t/c:: Citet &amp;ndash; Aa et al.</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://idiig.github.io/post/2022/11/02/test/</link>
-      <pubDate>Wed, 02 Nov 2022 11:41:00 +0900</pubDate>
-      
-      <guid>https://idiig.github.io/post/2022/11/02/test/</guid>
-      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-11-02 Wed 11:41] 感觉很多时候再重复查询一些解决办法，所以时隔三年重新开始用Hugo记录一些碰壁的情况用于以后查看</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://idiig.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://idiig.github.io/about/</guid>
-      <description></description>
     </item>
     
   </channel>

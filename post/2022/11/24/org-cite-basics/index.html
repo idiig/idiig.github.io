@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Org-cite basics | </title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Org-cite basics</span></h1>
+<h2 class="author">idiig</h2>
+<h2 class="date">2022/11/24</h2>
+</div>
+
+<main>
+<ul>
+<li>State &ldquo;DONE&rdquo;       from &ldquo;TODO&rdquo;       <span class="timestamp-wrapper"><span class="timestamp">[2022-11-24 Thu 01:49]</span></span></li>
+</ul>
+<h2 id="基本使用">基本使用</h2>
+<p>文献数据库指定。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span><span style="color:#75715e">#+bibliography</span><span style="color:#75715e">: orgcite.bib</span></span></span></code></pre></div>
+<p>引用格式:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span>[cite:@OrgCitations]</span></span></code></pre></div>
+<p>打印文献列表</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span><span style="color:#75715e">#+print_bibliography</span><span style="color:#75715e">:</span></span></span></code></pre></div>
+<p>复杂引用：下面的例子会生成 <strong>see org et al. 2021, 7 for fun</strong> .</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span>[cite/l/b:see @OrgCitations pp. 7 for fun]</span></span></code></pre></div>
+<ul>
+<li><code>l</code>: 引用格式</li>
+<li><code>b</code>: 引用变体</li>
+<li><code>see</code>: 共通头部补充</li>
+<li><code>pp. 7</code>: 页码等定位信息</li>
+<li><code>for fun</code>: 共通尾部补充</li>
+</ul>
+<p>常用的biblatex转换：</p>
+<ul>
+<li><code>cite/a/cf:</code>: Citeauthor &ndash; Aa, Bb, and Cc</li>
+<li><code>cite/a/c:</code>: Citeauthor &ndash; Aa et al.</li>
+<li><code>cite/na:</code>: citeyear &ndash; 2022</li>
+<li><code>cite/na/b:</code>: citeyearpar &ndash; (2022)</li>
+<li><code>cite/t/c:</code>: Citet &ndash; Aa et al. (2022)</li>
+<li><code>cite/t/cf:</code>: citep* &ndash; Aa, Bb, and Cc (2022)</li>
+<li><code>cite/bc</code>: Cite &ndash; Aa et al. 2022</li>
+<li><code>cite/cf</code>: Citep &ndash; (Aa et al. 2022)</li>
+</ul>
+<h2 id="输出基本设定">输出基本设定</h2>
+<p>设定引用输出处理器</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span><span style="color:#75715e">#+cite_export</span><span style="color:#75715e">: csl ~/Downloads/apa.csl&lt;csl文件位置&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># #+cite_export: processor bibliography-style citation-style</span></span></span></code></pre></div>
+<p>输出文献列表选项</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span><span style="color:#75715e">#+print_bibliography</span><span style="color:#75715e">: :section 2 :heading subbibliography</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># #+print_bibliography: :keyword abc,xyz :title &#34;Primary Sources&#34;</span></span></span></code></pre></div>
+<h2 id="文献格式文件">文献格式文件</h2>
+<p>可以通过以下代码使用zotero的格式文件：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq org-cite-csl-styles-dir <span style="color:#e6db74">&#34;~/Zotero/styles&#34;</span>)</span></span></code></pre></div>
+<p>在设置好格式文件夹以后，选择csl文件时可省略上级路径，如</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-org" data-lang="org"><span style="display:flex;"><span><span style="color:#75715e">#+cite_export</span><span style="color:#75715e">: csl apa.csl</span></span></span></code></pre></div>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © avionplat 2019 &ndash; 2022 | <a href="https://github.com/idiig">Github</a> | <a href="https://twitter.com/murahutibu">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

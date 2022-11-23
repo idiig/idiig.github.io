@@ -6,7 +6,21 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Nov 2022 11:41:00 +0900</lastBuildDate><atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Nov 2022 01:49:00 +0900</lastBuildDate><atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Org-cite basics</title>
+      <link>https://idiig.github.io/post/2022/11/24/org-cite-basics/</link>
+      <pubDate>Thu, 24 Nov 2022 01:49:00 +0900</pubDate>
+      
+      <guid>https://idiig.github.io/post/2022/11/24/org-cite-basics/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-11-24 Thu 01:49] 基本使用 文献数据库指定。
+#+bibliography: orgcite.bib 引用格式:
+[cite:@OrgCitations] 打印文献列表
+#+print_bibliography: 复杂引用：下面的例子会生成 see org et al. 2021, 7 for fun .
+[cite/l/b:see @OrgCitations pp. 7 for fun] l: 引用格式 b: 引用变体 see: 共通头部补充 pp. 7: 页码等定位信息 for fun: 共通尾部补充 常用的biblatex转换：
+cite/a/cf:: Citeauthor &amp;ndash; Aa, Bb, and Cc cite/a/c:: Citeauthor &amp;ndash; Aa et al. cite/na:: citeyear &amp;ndash; 2022 cite/na/b:: citeyearpar &amp;ndash; (2022) cite/t/c:: Citet &amp;ndash; Aa et al.</description>
+    </item>
+    
     <item>
       <title>Test</title>
       <link>https://idiig.github.io/post/2022/11/02/test/</link>
