@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>404 Page not found | </title>
+    <title> | </title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     
@@ -27,8 +27,19 @@
     <hr/>
     </nav>
 
+<div class="article-meta">
+<h1><span class="title"></span></h1>
+<h2 class="author">idiig</h2>
+<h2 class="date">2023/07/06</h2>
+</div>
 
-404 NOT FOUND
+<main>
+<h2 id="让lspbridge识别pyenv"><span class="org-todo todo TODO">TODO</span> 让lsp-bridge识别pyenv <span class="tag"><span class="emacs">emacs</span><span class="prog">prog</span></span></h2>
+<p>问题：使用 <code>lsp-bridge</code> 以后，python项目中安装的包和包里的function都无法被自动识别。</p>
+<p>解决：使用 <code>pyenv-pyright</code> 。这个工具可以根据local pyenv环境创建和更新 <code>pyrightconfig.json</code> 。</p>
+<p>通过下面的方法可以在emacs中打开项目时， <code>lsp-bridge</code> 能识别虚拟环境中的包。</p>
+
+</main>
 
   <footer>
   
