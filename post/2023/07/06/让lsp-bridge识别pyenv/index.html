@@ -39,7 +39,13 @@
 </ul>
 <p>问题：使用 <code>lsp-bridge</code> 以后，python项目中安装的包和包里的function都无法被自动识别。</p>
 <p>解决：使用 <code>pyenv-pyright</code> 。这个工具可以根据local pyenv环境创建和更新 <code>pyrightconfig.json</code> 。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 下载</span>
+</span></span><span style="display:flex;"><span>git clone https://github.com/alefpereira/pyenv-pyright.git <span style="color:#66d9ef">$(</span>pyenv root<span style="color:#66d9ef">)</span>/plugins/pyenv-pyright</span></span></code></pre></div>
 <p>通过下面的方法可以在emacs中打开项目时， <code>lsp-bridge</code> 能识别虚拟环境中的包。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 使用</span>
+</span></span><span style="display:flex;"><span>cd &lt;path-to-project&gt;
+</span></span><span style="display:flex;"><span>pyenv local &lt;virtualenv&gt;  <span style="color:#75715e"># 指定虚拟环境</span>
+</span></span><span style="display:flex;"><span>pyenv pyright  <span style="color:#75715e"># 创建或更新pyright设定</span></span></span></code></pre></div>
 
 </main>
 

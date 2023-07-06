@@ -13,9 +13,10 @@
       <pubDate>Thu, 06 Jul 2023 22:14:00 +0900</pubDate>
       
       <guid>https://idiig.github.io/post/2023/07/06/%E8%AE%A9lsp-bridge%E8%AF%86%E5%88%ABpyenv/</guid>
-      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2023-07-06 Thu 22:14] 问题：使用 lsp-bridge 以后，python项目中安装的包和包里的function都无法被自动识别。
+      <description> State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2023-07-06 Thu 22:14] 问题：使用 lsp-bridge 以后，python项目中安装的包和包里的function都无法被自动识别。
 解决：使用 pyenv-pyright 。这个工具可以根据local pyenv环境创建和更新 pyrightconfig.json 。
-通过下面的方法可以在emacs中打开项目时， lsp-bridge 能识别虚拟环境中的包。</description>
+# 下载 git clone https://github.com/alefpereira/pyenv-pyright.git $(pyenv root)/plugins/pyenv-pyright 通过下面的方法可以在emacs中打开项目时， lsp-bridge 能识别虚拟环境中的包。
+# 使用 cd &amp;lt;path-to-project&amp;gt; pyenv local &amp;lt;virtualenv&amp;gt; # 指定虚拟环境 pyenv pyright # 创建或更新pyright设定 </description>
     </item>
     
   </channel>
