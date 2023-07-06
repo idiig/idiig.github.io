@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Posts | </title>
+    <title>让lsp-bridge识别pyenv | </title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     
@@ -27,43 +27,21 @@
     <hr/>
     </nav>
 
+<div class="article-meta">
+<h1><span class="title">让lsp-bridge识别pyenv</span></h1>
+<h2 class="author">idiig</h2>
+<h2 class="date">2023/07/06</h2>
+</div>
 
-
-<h1>Posts</h1>
-
-
-
-
+<main>
 <ul>
-  
-  
-  
-  <li>
-    <span class="date">2023/07/06</span>
-    <a href="/post/2023/07/06/%E8%AE%A9lsp-bridge%E8%AF%86%E5%88%ABpyenv/">让lsp-bridge识别pyenv</a>
-  </li>
-  
-  <li>
-    <span class="date">2022/11/24</span>
-    <a href="/post/2022/11/24/emacs%E6%8D%A2%E8%A1%80/">emacs换血</a>
-  </li>
-  
-  <li>
-    <span class="date">2022/11/24</span>
-    <a href="/post/2022/11/24/org-cite-basics/">Org-cite basics</a>
-  </li>
-  
-  <li>
-    <span class="date">2022/11/24</span>
-    <a href="/post/2022/11/24/m1-emacs%E4%B8%8D%E8%83%BD%E8%A2%ABbrew%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/">M1 Emacs不能被brew安装的问题</a>
-  </li>
-  
-  <li>
-    <span class="date">2022/11/02</span>
-    <a href="/post/2022/11/02/test/">Test</a>
-  </li>
-  
+<li>State &ldquo;DONE&rdquo;       from &ldquo;TODO&rdquo;       <span class="timestamp-wrapper"><span class="timestamp">[2023-07-06 Thu 22:14]</span></span></li>
 </ul>
+<p>问题：使用 <code>lsp-bridge</code> 以后，python项目中安装的包和包里的function都无法被自动识别。</p>
+<p>解决：使用 <code>pyenv-pyright</code> 。这个工具可以根据local pyenv环境创建和更新 <code>pyrightconfig.json</code> 。</p>
+<p>通过下面的方法可以在emacs中打开项目时， <code>lsp-bridge</code> 能识别虚拟环境中的包。</p>
+
+</main>
 
   <footer>
   

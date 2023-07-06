@@ -6,14 +6,14 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jul 2023 20:48:28 +0900</lastBuildDate><atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jul 2023 22:14:00 +0900</lastBuildDate><atom:link href="https://idiig.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://idiig.github.io/post/2023/07/06/</link>
-      <pubDate>Thu, 06 Jul 2023 20:48:28 +0900</pubDate>
+      <title>让lsp-bridge识别pyenv</title>
+      <link>https://idiig.github.io/post/2023/07/06/%E8%AE%A9lsp-bridge%E8%AF%86%E5%88%ABpyenv/</link>
+      <pubDate>Thu, 06 Jul 2023 22:14:00 +0900</pubDate>
       
-      <guid>https://idiig.github.io/post/2023/07/06/</guid>
-      <description>TODO 让lsp-bridge识别pyenv emacsprog 问题：使用 lsp-bridge 以后，python项目中安装的包和包里的function都无法被自动识别。
+      <guid>https://idiig.github.io/post/2023/07/06/%E8%AE%A9lsp-bridge%E8%AF%86%E5%88%ABpyenv/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2023-07-06 Thu 22:14] 问题：使用 lsp-bridge 以后，python项目中安装的包和包里的function都无法被自动识别。
 解决：使用 pyenv-pyright 。这个工具可以根据local pyenv环境创建和更新 pyrightconfig.json 。
 通过下面的方法可以在emacs中打开项目时， lsp-bridge 能识别虚拟环境中的包。</description>
     </item>
