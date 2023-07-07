@@ -1,0 +1,8 @@
+(undo-tree-save-format-version . 1)
+"b17eb863c14ef679d32bf7922d4449446f0d9011"
+[nil nil nil nil (25768 7644 761428 0) 0 nil]
+([nil nil ((1527 . 1528) (t 25768 6986 679586 714000)) nil (25768 7644 761427 0) 0 nil])
+([nil nil ((1528 . 1530)) nil (25768 7644 761427 0) 0 nil])
+([nil nil ((apply yas--take-care-of-redo #s(yas--snippet nil (#s(yas--field 1 #<marker at 1533 in index.html> #<marker at 1535 in index.html> nil nil nil t nil)) nil 0 #<overlay from 1528 to 1536 in index.html> #s(yas--field 1 #<marker at 1533 in index.html> #<marker at 1535 in index.html> nil nil nil t nil) nil nil)) (1528 . 1534) (#("re" 0 2 (face tree-sitter-hl-face:attribute fontified t)) . -1528) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -2) (undo-tree-id7 . -2) (undo-tree-id8 . -2) (undo-tree-id9 . -2) (undo-tree-id10 . -2) (undo-tree-id11 . -2) (undo-tree-id12 . -2) (undo-tree-id13 . -2) (undo-tree-id14 . -2) (undo-tree-id15 . -2) (undo-tree-id16 . -2) (undo-tree-id17 . -2) (undo-tree-id18 . -2) (undo-tree-id19 . -2) (undo-tree-id20 . -2) (undo-tree-id21 . -2) (undo-tree-id22 . -2) 1530) nil (25768 7644 761426 0) 0 nil])
+([nil current ((1533 . 1535)) nil (25768 7644 761399 0) 0 nil])
+nil
